@@ -1,6 +1,6 @@
 <template>
-    <div>
-      <h1>Repositories</h1>
+    <div class="card">
+      <h1>My GitHub Repositories</h1>
       <ul>
         <li v-for="repo in repositories" :key="repo.id">
           <router-link :to="{ 
@@ -66,12 +66,24 @@
   </script>
   
   <style>
+  * {
+  box-sizing: border-box;
+  margin: 20;
+  padding: 10;
+}
+
     h1 {
       font-size: 24px;
     }
     li {
-      font-size: 18px;
-      margin-bottom: 10px;
+  border: 1px solid #8d1919;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  min-height: 30px;
+  text-align: center;
     }
+
   </style>
   
