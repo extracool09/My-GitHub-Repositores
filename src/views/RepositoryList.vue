@@ -20,7 +20,7 @@
       return {
         repositories: [],
         page: 1,
-        perPage: 10,
+        perPage: 5,
         totalPages: 1
       }
     },
