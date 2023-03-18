@@ -3,7 +3,11 @@ import RepositoryList from '@/views/RepositoryList.vue'
 import RepositoryDetails from '@/views/RepositoryDetails.vue'
 import NotFound from '@/views/NotFound.vue'
 
-const routes = [
+const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
+     
+
+routes: [
     {
         path: '/',
         name: 'RepositoryList',
@@ -24,9 +28,7 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+
 })
 
 export default router

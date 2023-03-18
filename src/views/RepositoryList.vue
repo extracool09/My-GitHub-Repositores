@@ -3,7 +3,10 @@
       <h1>Repositories</h1>
       <ul>
         <li v-for="repo in repositories" :key="repo.id">
-          <router-link :to="{ name: 'RepositoryDetails', params: { repoId: repo.id } }">{{ repo.name }}</router-link>
+          <router-link :to="{ 
+            name: 'RepositoryDetails', 
+            params: { repoId: repo.id } }" 
+            target = "_blank">{{ repo.name }}</router-link>
         </li>
       </ul>
       <div v-if="totalPages > 1">
