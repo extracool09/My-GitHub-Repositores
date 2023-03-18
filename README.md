@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+<!--link to the uploaded project-->
+
+https://my-git-hub-repositores.vercel.app/
